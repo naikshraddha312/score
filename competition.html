@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join the exciting Rassi Khech (Tug of War) competition in Basarge, Maharashtra! Win prizes worth Rs 2000, 1500, and 1000!">
+  <meta name="keywords" content="Rassi Khech, Tug of War, Basarge, Maharashtra, Competition, Prizes, Traditional Games">
+  <meta name="author" content="Basarge Community">
+  <title>Rassi Khech Competition - Basarge, Maharashtra</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      text-align: center;
+      margin-top: 50px;
+      color: #4a4a4a;
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      color: #1a73e8;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+    }
+
+    .event-info {
+      margin-top: 30px;
+      background-color: #f0f8ff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .event-info h2 {
+      color: #00796b;
+    }
+
+    .prizes-section {
+      margin-top: 40px;
+      text-align: center;
+      background-color: #e0f7fa;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .prizes-section h2 {
+      color: #00695c;
+    }
+
+    .prize {
+      background-color: #b2dfdb;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+    }
+
+    .footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 1rem;
+      color: #4a4a4a;
+    }
+
+    .competition-img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .cta-section {
+      margin-top: 50px;
+      text-align: center;
+      background-color: #00796b;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .cta-section h3 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .cta-section p {
+      font-size: 1.1rem;
+    }
+
+    .cta-btn {
+      background-color: #ff5722;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .cta-btn:hover {
+      background-color: #e64a19;
+    }
+
+    /* Countdown Styles */
+    .countdown-container {
+      margin-top: 50px;
+      text-align: center;
+      background-color: #1a73e8;
+      color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .countdown {
+      font-size: 4rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .time-unit {
+      background: #ff5722;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      font-size: 3rem;
+    }
+
+    .countdown span {
+      display: block;
+      font-size: 1rem;
+      margin-top: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .countdown {
+        font-size: 2rem;
+      }
+      .time-unit {
+        padding: 15px 20px;
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .countdown {
+        font-size: 1.5rem;
+      }
+      .time-unit {
+        padding: 10px 15px;
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Rassi Khech (Tug of War) Competition</h1>
+    <p>Join the thrilling Tug of War competition in Basarge, Maharashtra!</p>
+  </div>
+
+  <!-- Countdown Timer -->
+  <div class="container countdown-container">
+    <h2>Time Remaining Until the Event</h2>
+    <div class="countdown">
+      <div class="time-unit" id="days">
+        00 <span>Days</span>
+      </div>
+      <div class="time-unit" id="hours">
+        00 <span>Hours</span>
+      </div>
+      <div class="time-unit" id="minutes">
+        00 <span>Minutes</span>
+      </div>
+      <div class="time-unit" id="seconds">
+        00 <span>Seconds</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Event Image -->
+  <div class="container">
+    <img src="./tow.jpg" alt="Rassi Khech" class="competition-img">
+  </div>
+
+  <!-- Event Information Section -->
+  <div class="container event-info">
+    <h2>About the Event</h2>
+    <p>The Rassi Khech competition is a traditional and exciting Tug of War challenge where teams compete for
+      the ultimate title of strength, strategy, and teamwork. This annual event is hosted in **Basarge**, a vibrant
+      village in **Maharashtra**, known for its rich cultural heritage and spirit of community. The competition is
+      open to all participants who are ready to take on the challenge!</p>
+    <p>Come join us for an unforgettable experience filled with energy, fun, and the excitement of competing for
+      amazing prizes!</p>
+  </div>
+
+  <!-- Prizes Section -->
+  <div class="container prizes-section">
+    <h2>Exciting Prizes Await!</h2>
+    <div class="prize">
+      <h4>1st Prize: ?2000</h4>
+      <p>Claim the ultimate glory and take home the grand prize of ?2000!</p>
+    </div>
+    <div class="prize">
+      <h4>2nd Prize: ?1500</h4>
+      <p>Second place is no less impressive! Win ?1500 and earn your place in history!</p>
+    </div>
+    <div class="prize">
+      <h4>3rd Prize: ?1000</h4>
+      <p>The third-place winner will walk away with ?1000! It's time to show your strength!</p>
+    </div>
+  </div>
+
+  <!-- Call to Action Section -->
+  <div class="container cta-section">
+    <h3>Ready to Join the Competition?</h3>
+    <p>Don't miss out on this thrilling event in Basarge! Gather your team and get ready to fight for the prize.
+      Whether you're a local or visiting, this competition promises to be one of the most exciting experiences in the
+      region.</p>
+    <!-- WhatsApp Link Added Here -->
+    <a href="https://wa.me/919876543210" class="cta-btn" target="_blank">Register Now</a>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2025 Rassi Khech Competition | Basarge, Maharashtra | All Rights Reserved</p>
+  </div>
+
+  <!-- Bootstrap and JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Countdown Timer JavaScript -->
+  <script>
+    // Set the date for the event (e.g., 1st January 2025)
+    const eventDate = new Date("2025-10-24T21:00:00").getTime();
+
+    // Update the countdown every second
+    const countdownInterval = setInterval(function () {
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+
+      // Calculate time components
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result in HTML elements
+      document.getElementById("days").innerHTML = days < 10 ? "0" + days : days;
+      document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
+      document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
+      document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
+
+      // If the countdown is over, display a message
+      if (distance < 0) {
+        clearInterval(countdownInterval);
+        document.getElementById("days").innerHTML = "00";
+        document.getElementById("hours").innerHTML = "00";
+        document.getElementById("minutes").innerHTML = "00";
+        document.getElementById("seconds").innerHTML = "00";
+        alert("The event has started!");
+      }
+    }, 1000);
+  </script>
+
+</body>
+
+</html>
